@@ -1,0 +1,18 @@
+<br>
+<nav>
+  <a routerLink="/baby-meal">{{ 'HOME.BACKTOBM' | translate }}</a>
+</nav> 
+
+<div id="search-component">
+    <h4><label for="search-box">{{ 'HOME.SEARCHFOOD' | translate }}</label></h4>
+  
+    <input #searchBox id="search-box" (input)="search(searchBox.value)"/>
+  
+    <ul class="search-result">
+      <li *ngFor="let food of foods$ | async" >
+        <a routerLink="/detail/{{food.id}}">
+          {{food.name}}
+        </a>
+      </li>
+    </ul>
+  </div>

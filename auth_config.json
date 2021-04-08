@@ -1,0 +1,6 @@
+{
+    "domain": "dev-sof.eu.auth0.com",
+    "clientId": "CfUD0psLOY83Y64VMx221YH8hSmmDoeD",
+    "audience": "https://dev-sof.eu.auth0.com/api/v2/",
+    "apiUrl": "http://localhost:7000"
+  }

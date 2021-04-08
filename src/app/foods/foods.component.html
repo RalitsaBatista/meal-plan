@@ -1,0 +1,26 @@
+<div class="body-food">
+  <nav>
+  <a routerLink="/baby-meal">{{ 'HOME.BACKTOBM' | translate }}</a>
+</nav> 
+<br>
+<h2>{{ 'HOME.MYBABYMEAL' | translate }}</h2>
+<div>
+  <label class="food_name">{{ 'HOME.FOODNAME' | translate }}:
+    <input #foodName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(foodName.value); foodName.value='' ">
+    {{ 'HOME.ADD' | translate }}
+  </button>
+</div>
+
+<ul class="foods">
+  <li *ngFor="let food of foods">
+    <a routerLink="/detail/{{food.id}}">
+      <span class="badge">{{food.id}}</span>{{food.name}}
+    </a>
+    <button class="delete" title="delete food"
+      (click)="delete(food)">x</button>
+  </li>
+</ul>
+</div>

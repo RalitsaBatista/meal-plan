@@ -1,0 +1,11 @@
+<div *ngIf="food">
+    <h2>{{food.name | uppercase}} {{ 'HOME.DETAILS' | translate }}</h2>
+    <div><span>id: </span>{{food.id}}</div>
+    <div>
+      <label>{{ 'HOME.FOODNAME' | translate }}:
+        <input [(ngModel)]="food.name" placeholder="name"/>
+      </label>
+    </div>
+    <button (click)="goBack()">{{ 'HOME.GOBACK' | translate }}</button>
+    <button (click)="save()">{{ 'HOME.SAVE' | translate }}</button>
+  </div>
