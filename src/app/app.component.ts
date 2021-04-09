@@ -36,6 +36,7 @@ export class AppComponent {
   goToBaby(pageName:string):void{
     this.router.navigate([`$(pageName)`]);
   }
+  
   goToInfo(pageName:string):void{
     this.router.navigate([`$(pageName)`]);
   }
