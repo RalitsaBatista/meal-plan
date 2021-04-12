@@ -14,13 +14,17 @@
   </button>
 </div>
 
-<ul class="foods">
-  <li *ngFor="let food of foods">
-    <a routerLink="/detail/{{food.id}}">
-      <span class="badge">{{food.id}}</span>{{food.name}}
+<ul class="foods col-md-6 ml-2">
+  <li *ngFor="let food of foods" class="col-md-12 row">
+    <a class="col-md-8 pl-0 food-item" routerLink="/detail/{{food.id}}">
+      <span class="badge">{{food.id}}</span><span class="food-name pl-3">{{food.name}}</span>
     </a>
-    <button class="delete" title="delete food"
-      (click)="delete(food)">x</button>
+    <button  class="edit btn btn-warning" data-container="body" data-trigger="hover" data-toggle="popover" title="Edit item" data-content="Edit " 
+      (click)="edit(food)"><i class="bi bi-pencil-square"></i>
+    </button>
+    <button  class="delete btn btn-danger" data-container="body" data-trigger="hover" data-toggle="popover" title="Delete food" data-content="Delete " 
+      (click)="delete(food)"><i class="bi bi-trash text-danger1"></i>
+    </button>
   </li>
 </ul>
 </div>

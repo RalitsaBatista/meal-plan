@@ -35,4 +35,9 @@ export class FoodsComponent implements OnInit {
     this.foodService.deleteFood(food).subscribe();
   }
 
+  edit(food: Food): void {
+    this.foods = this.foods.filter(f => f !== food);
+    //this.foodService.deleteFood(food).subscribe();
+  }
+
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { OwnMealComponent } from '../own-meal/own-meal.component';
 import { BabyMealComponent } from '../baby-meal/baby-meal.component';

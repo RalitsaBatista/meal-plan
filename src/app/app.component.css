@@ -4,14 +4,14 @@
     text-decoration: none;
     margin: 10px;
     display: inline-block;
-    background-color: rgba(99, 176, 238, 0.801);
+    background-color: rgba(247,203,122,.815);;
     border-radius: 4px;
   }
   nav a:visited, a:link {
     color: #334953;
   }
   nav a:hover {
-    color: #039be5;
+    color:rgba(247,203,122,.815);
     background-color: #cfd8dc;
   }
   nav a.active {
