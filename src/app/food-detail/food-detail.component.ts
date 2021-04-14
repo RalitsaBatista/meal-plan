@@ -28,15 +28,4 @@ food!: Food;
     this.foodService.getFood(id)
       .subscribe(food => this.food = food);
   }
-
-  goBack(): void {
-    this.location.back();
-  }
-
-  save(): void {
-    this.foodService.updateFood(this.food)
-      .subscribe(() => this.goBack());
-  
-  }
-
 }

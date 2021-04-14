@@ -4,24 +4,19 @@
   }
 .back{
     font-style: italic;
-    padding: 20px;
     align-items: right;
   }
   #changelang{
   background-image: url(../../image/fruits-bg.jpg);
   background-color:  rgba(236, 212, 167, 0.315);
-  height: 485px;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
+  height: 41em;
+  background-position: right; 
   margin-top: -1.8em;
-  margin-right: -8.8em;
+  display: flex;
   flex-direction: column;
   align-items: center;
   font-style: italic;
-
+  margin-right: -8.5em;
   }
   :host {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

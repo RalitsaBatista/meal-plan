@@ -1,15 +1,10 @@
 .footer {
-    position: fixed;
-    bottom: 0;
-    height: 67px;
-    width: 100%;
+    position:relative;
     text-align: center;
     background-color: rgb(247, 203, 122, 0.815);
     color: white;
-    font-size: large;
-    padding-bottom: 10px;
+    font-size: medium;
+    padding-bottom: 5px;
     text-align: center;
   }
-  .footer h3{
-    padding-bottom: 10px;
-  }
+  
