@@ -1,5 +1,4 @@
-<!--<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav"> -->
-
+ 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
 
@@ -12,12 +11,13 @@
       </select>
     </label>
   </div>
-  <div class="nav-container mr-5d-flex justify-content-between">
-    <nav class="navbar-nav navbar-expand-md pl-5">
+  <div class="nav-container ">
+    <nav class="navbar-nav navbar-expand-md">
       <div class="container">
         <div class="navbar-nav pl-5">
           <app-main-nav></app-main-nav>
         </div>
+        
       </div>
       <app-login-button *ngIf="(auth.isAuthenticated$ | async) === false"></app-login-button>
       <app-logout-button *ngIf="auth.isAuthenticated$ | async"></app-logout-button>
