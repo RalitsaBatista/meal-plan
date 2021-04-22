@@ -6,8 +6,9 @@
     font-style: italic;
     align-items: right;
   }
-  #changelang{
-  background-image: url(../../image/fruits-bg.jpg);
+ 
+  #frontpage{
+  background-image: url(../../image/fruits-bg.jpg); 
   background-color:  rgba(236, 212, 167, 0.315);
   height: 41em;
   background-position: right; 
