@@ -1,20 +1,20 @@
-<nav> 
+<nav>
   <a routerLink="/frontpage" class="frontpage "> {{ 'HOME.FRONTPAGE' | translate }}</a>
 </nav>
 <div id="app" class="d-flex flex-column h-100">
   <div class="container" *ngIf="auth.isLoading$ | async; else loaded">
     <app-loading></app-loading>
   </div>
-  
+
   <ng-template #loaded>
-   
-    <div class="container flex-grow-1">  
+
+    <div class="container flex-grow-1">
       <div class="mt-5">
         <router-outlet></router-outlet>
       </div>
     </div>
 
-    <app-footer></app-footer>
-    </ng-template>
 
+    </ng-template>
+    <app-footer></app-footer>
 </div>

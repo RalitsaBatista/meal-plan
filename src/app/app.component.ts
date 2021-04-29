@@ -17,24 +17,24 @@ export class AppComponent {
   [x: string]: any;
   constructor(public translate: TranslateService, private foodService: FoodService, private router:Router , public dialog: MatDialog, public auth: AuthService) {
 
-  } 
+  }
   foods: Food[] = [];
 
-  goToPage(pageName:string):void {
+  goToPage(_pageName:string):void {
    this.router.navigate([`$(pageName)`]);
   }
-  
-  goToBaby(pageName:string):void{
+
+  goToBaby(_pageName:string):void{
     this.router.navigate([`$(pageName)`]);
   }
 
-  goToInfo(pageName:string):void{
+  goToInfo(_pageName:string):void{
     this.router.navigate([`$(pageName)`]);
   }
-  
+
   openDialog() {
     this.dialog.open(OwnMealComponent);
   }
-  
+
 }
 

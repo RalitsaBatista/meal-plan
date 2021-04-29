@@ -12,7 +12,7 @@ import { FoodService } from '../food.service';
   styleUrls: ['./food-search.component.css']
 })
 export class FoodSearchComponent implements OnInit {
-  foods$!: Observable<Food[]>;
+  foods!: Observable<Food[]>;
   private searchTerms = new Subject<string>();
 
   constructor(private foodService: FoodService) {}
@@ -21,7 +21,7 @@ export class FoodSearchComponent implements OnInit {
   this.searchTerms.next(term);
 }
   ngOnInit(): void {
-    this.foods$ = this.searchTerms.pipe(
+    this.foods = this.searchTerms.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
 

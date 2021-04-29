@@ -11,13 +11,13 @@ import { DOCUMENT } from '@angular/common';
 export class ScrollToTopComponent implements OnInit {
 
   windowScrolled: boolean = false;
-  
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  constructor() {}
   @HostListener("window:scroll", [])
   onWindowScroll() {
       if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
           this.windowScrolled = true;
-      } 
+      }
      else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
           this.windowScrolled = false;
       }

@@ -1,15 +1,14 @@
-/* HeroesComponent's private CSS styles */
+
 .body-food{
-  background-image: url(../../image/baby-finger-food-ideas.jpg);
-  width: 57%;
-  height: 600px;
+  background-color: rgb(241, 220, 180);
+  width: 60%;
   border:rgb(87, 89, 95) solid 2px;
   border-radius: 5px;
   margin:2px;
 }
 nav{
   padding: 10px;
-  color: rgb(42, 42, 48);
+  color: rgb(48, 47, 42);
   font-size: 12px;
   text-decoration:none;
 }
@@ -18,7 +17,7 @@ nav{
   font-size: 14px;
 }
 ul.foods {
-  
+
   list-style-type: none;
   padding: 0;
   width: 300px;
@@ -35,13 +34,13 @@ ul.foods a {
   color: #444;
 }
 ul.foods a:hover {
-  background-color: beige;
+  background-color: rgb(229, 215, 149);
 }
 
 ul.foods .badge {
   min-width: 30px;
   font-size: 1.2em;
-  background-color: #405061;
+  background-color: #53524d;
   border-radius: 4px 0 0 4px;
   line-height: 18px;
   color: #FFF;
@@ -54,7 +53,7 @@ button.delete,a.delete,button.edit,a.edit {
   margin-left: 5px;;
 }
 .food-item {
-  background-color: azure;
+  background-color: rgba(236, 182, 111, 0.979);
 }
 .foods_ li {
   position: relative;
@@ -67,8 +66,12 @@ button.delete,a.delete,button.edit,a.edit {
   font-size: 14px;
 }
 
+.edit{
+  background-color: #fac678;
+}
+
 .foods_ li:hover {
-  color: #607D8B;
+  color: #53524d;
   background-color: #DDD;
   left: .1em;
 }
@@ -78,20 +81,20 @@ button.delete,a.delete,button.edit,a.edit {
   text-decoration: none;
   position: relative;
   float: left;
-  height: 1.6em;  
+  height: 1.6em;
   padding: -5px;
 }
 
 
 .foods_ a:hover {
-  color: #607D8B;
+  color: #53524d;
 }
 
 .foods_ .badge {
   display: inline-block;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #405061;
+  background-color: #53524d;
   line-height: 1em;
   position: relative;
   left: -1px;

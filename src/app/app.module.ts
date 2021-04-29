@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { OwnMealComponent } from './own-meal/own-meal.component';
 import { BabyMealComponent } from './baby-meal/baby-meal.component';
@@ -21,7 +21,6 @@ import { FoodDetailComponent } from './food-detail/food-detail.component';
 import { FoodsComponent } from './foods/foods.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { MessagesComponent } from './messages/messages.component';
-import { FoodService } from './food.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { AuthModule, AuthHttpInterceptor } from '@auth0/auth0-angular';
@@ -33,7 +32,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { LoginButtonComponent } from './login-button/login-button.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
-
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +52,7 @@ import { HomeComponent } from './home/home.component';
     LoadingComponent,
     NavBarComponent,
     HomeComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
@@ -62,14 +62,14 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    HttpClientModule,  
+    HttpClientModule,
     AuthModule.forRoot({
       ...env.auth,
       httpInterceptor: {
         //List of URLs to work with and to tell auth0 to add the token only if it matches this url above.
         allowedList: [`${env.dev.apiUrl}/api/messages/protected-message`],
       }
-    }),   
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -82,11 +82,11 @@ import { HomeComponent } from './home/home.component';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {  dataEncapsulation: false, passThruUnknownUrl: true }
     )
-    
+
   ],
 
   entryComponents: [
-    OwnMealComponent, 
+    OwnMealComponent,
     BabyMealComponent,
     InfoComponent,
   ],
@@ -107,7 +107,7 @@ export const environment = {
   };
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   //return new TranslateHttpLoader(http);
-  
+
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
   //return new TranslateHttpLoader(http, environment.I18N_FOLDER, ".json");
 }

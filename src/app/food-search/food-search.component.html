@@ -1,18 +1,13 @@
 
-<!--<nav>
-  <a routerLink="/baby-meal">{{ 'HOME.BACKTOBM' | translate }}</a>
-</nav> -->
-
 <div id="search-component">
     <h4><label for="search-box">{{ 'HOME.SEARCHFOOD' | translate }}</label></h4>
     <form style="max-width:300px">
       <input #searchBox id="search-box" (input)="search(searchBox.value)" type="text" placeholder="Search.." name="search2">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-   <!-- <input #searchBox id="search-box" (input)="search(searchBox.value)"/> -->
-  
+
     <ul class="search-result">
-      <li *ngFor="let food of foods$ | async" >
+      <li *ngFor="let food of foods | async" >
         <a routerLink="/detail/{{food.id}}">
           {{food.name}}
         </a>

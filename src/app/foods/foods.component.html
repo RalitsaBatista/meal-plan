@@ -1,7 +1,5 @@
 <div class="body-food">
-  <nav>
-  <a routerLink="/baby-meal">{{ 'HOME.BACKTOBM' | translate }}</a>
-</nav> 
+
 <br>
 <h2>{{ 'HOME.MYBABYMEAL' | translate }}</h2>
 <div>
@@ -19,10 +17,10 @@
     <a class="col-md-8 pl-0 food-item" routerLink="/detail/{{food.id}}">
       <span class="badge">{{food.id}}</span><span class="food-name pl-3">{{food.name}}</span>
     </a>
-    <button  class="edit btn btn-secondary" data-container="body" data-trigger="hover" data-toggle="popover" title="Edit item" data-content="Edit "   
+    <button  class="edit btn " data-container="body" data-trigger="hover" data-toggle="popover" title="Edit item" data-content="Edit "
     (click)="edit(food)"><i class="bi bi-pencil-square"></i>
     </button>
-    <button  class="delete btn btn-danger" data-container="body" data-trigger="hover" data-toggle="popover" title="Delete food" data-content="Delete " 
+    <button  class="delete btn btn-danger" data-container="body" data-trigger="hover" data-toggle="popover" title="Delete food" data-content="Delete "
       (click)="delete(food)"><i class="bi bi-trash text-danger1"></i>
     </button>
   </li>

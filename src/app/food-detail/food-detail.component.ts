@@ -16,7 +16,6 @@ food!: Food;
   constructor(
     private route: ActivatedRoute,
     private foodService: FoodService,
-    private location: Location
   ) {}
 
   ngOnInit(): void {
