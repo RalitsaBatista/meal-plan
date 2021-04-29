@@ -1,4 +1,4 @@
-export const ITEMS: any = [
+/*export const FOODS: any = [
     {
         id: 1,
         description:"potato/sweet potato",
@@ -59,4 +59,4 @@ export const ITEMS: any = [
         category:"meat",
         daysGiven: 3
     },
-]
+]*/
