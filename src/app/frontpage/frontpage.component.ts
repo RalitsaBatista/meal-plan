@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { OwnMealComponent } from '../own-meal/own-meal.component';
-import { BabyMealComponent } from '../baby-meal/baby-meal.component';
 import { MatDialog } from '@angular/material/dialog';
 import { FoodService } from '../food.service';
 import { Food } from '../food';
@@ -23,7 +22,7 @@ export class FrontpageComponent implements OnInit {
     translate.addLangs(['en', 'fi', 'es', 'bg' ]);
     translate.setDefaultLang('en');
     const browserLang = translate.getBrowserLang();
-    
+
 
     //it will check for language match and if it doesn't find then it will translate to the default lang ('en')
     let currLang = browserLang.match(/en|fi|es|bg/) ? browserLang : 'en';
@@ -34,27 +33,27 @@ export class FrontpageComponent implements OnInit {
     translate.use(currLang);
     this.selectLang = currLang;
     //console.log(browserLang);
-  } 
+  }
   foods: Food[] = [];
 
   setLanguage(lang: string):void {
     this.cookieService.set('userLang',lang,{expires: 365});
     console.log('SET userLang:',lang);
     this.translate.use(lang);
-    this.selectLang = lang;    
+    this.selectLang = lang;
   }
-  
+
   goToPage(pageName:string):void {
    this.router.navigate([`$(pageName)`]);
   }
-  
+
   goToBaby(pageName:string):void{
     this.router.navigate([`$(pageName)`]);
   }
   goToInfo(pageName:string):void{
     this.router.navigate([`$(pageName)`]);
   }
-  
+
   openDialog() {
     this.dialog.open(OwnMealComponent);
   }

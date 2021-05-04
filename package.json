@@ -38,6 +38,7 @@
     "express-jwt": "^6.0.0",
     "helmet": "^3.23.3",
     "jwks-rsa": "^1.8.1",
+    "mdb-ui-kit": "^3.5.0",
     "morgan": "^1.10.0",
     "ngx-cookie-service": "^11.0.2",
     "prettier": "^2.2.1",

@@ -34,6 +34,7 @@ export class AppComponent {
 
   openDialog() {
     this.dialog.open(OwnMealComponent);
+    this.dialog.open(BabyMealComponent);
   }
 
 }

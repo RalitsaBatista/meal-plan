@@ -20,13 +20,12 @@ import { FoodSearchComponent } from './food-search/food-search.component';
 import { FoodDetailComponent } from './food-detail/food-detail.component';
 import { FoodsComponent } from './foods/foods.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
-import { MessagesComponent } from './messages/messages.component';
+
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { AuthModule, AuthHttpInterceptor } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { ProfileComponent } from './profile/profile.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { LogoutButtonComponent } from './logout-button/logout-button.component';
 import { LoadingComponent } from './loading/loading.component';
 import { LoginButtonComponent } from './login-button/login-button.component';
@@ -44,10 +43,8 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     FoodDetailComponent,
     FoodsComponent,
     FrontpageComponent,
-    MessagesComponent,
     LoginButtonComponent,
     LogoutButtonComponent,
-    MainNavComponent,
     ProfileComponent,
     LoadingComponent,
     NavBarComponent,

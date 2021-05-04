@@ -1,3 +1,6 @@
+<nav>
+  <a routerLink="/frontpage" class="frontpage "> {{ 'HOME.FRONTPAGE' | translate }}</a>
+</nav>
 <div class="container">
     <div class="row pt-10">
       <div class="col-md-8">
@@ -26,19 +29,19 @@
                   <div class="row ">
                     <div class="col-md-12">
                       <div class="form-group border_tab pading-radio">
-                        
+
                         <label fora="gender-male" class="col-md-12">
                           <input type="radio" (focus)="notFocused=false" class="radio-inline" required name="gender" id="gender-male"  value="1" ngModel>
                         <span class="outside"><span class="inside"></span></span>
                         <span class="label-text">{{ 'HOME.MALE' | translate }}</span>
-                        
+
                         </label>
                         <label class="col-md-12" for="gender-female">
                         <input type="radio" (focus)="notFocused=false" class="radio-inline" required name="gender" id="gender-female" value="2" ngModel><span class="outside"><span class="inside"></span></span>
                         <span class="label-text">{{ 'HOME.FEMALE' | translate }}</span>
                       </label>
                       </div>
-                      
+
                     </div>
                   </div>
                   <div class="form-row col-md-12 m-0 p-0" *ngIf="show_us_fields">
@@ -46,7 +49,7 @@
                       <input type="number" (focus)="notFocused=false" class="form-control input-lg" placeholder="{{ 'HOME.FEET' | translate }}" ngModel name="height_feet"
                         required>
                     </div>
-                    <!-- 
+                    <!--
                     <div class="form-group col-md-5 p-0 d-none">
                       <input type="number" (focus)="notFocused=false" class="form-control input-lg" placeholder="{{ 'HOME.INCH' | translate }}" ngModel name="height_inch"
                         required>

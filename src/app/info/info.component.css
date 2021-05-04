@@ -2,10 +2,10 @@ p {
   margin: 4px;
   font-size: 14px;
   font-family: cursive;
-  
+
 }
 h1 {
-  
+
   font-size: 22px;
   font-family: cursive;
   font-weight: bold;
@@ -13,7 +13,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  
+
   font-size: 18px;
   font-family: cursive;
   color: rgb(104, 102, 96);
@@ -21,4 +21,19 @@ h2 {
 }
 .border {
   border-radius: 5px;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #334953;
+}
+nav a:hover {
+  color: white;
+  background-color: #f3684f;
 }

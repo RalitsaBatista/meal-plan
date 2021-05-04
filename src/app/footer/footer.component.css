@@ -1,9 +1,9 @@
-.footer {
-    position:relative;
-    text-align: center;
-    background-color: rgb(247, 203, 122, 0.815);
-    color: white;
-    font-size: medium;
-    padding-bottom: 5px;
-    text-align: center;
-  }
+.page-footer {
+  position:relative;
+  text-align: center;
+  background-color: rgb(247, 203, 122, 0.815);
+  color: white;
+  font-size: medium;
+  padding: 2px;
+  font-size: 1.2em;
+}

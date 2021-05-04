@@ -1,4 +1,70 @@
-.container {
-    justify-content: flex-start; 
-    
-    }
+/*laptop first */
+#navbar {
+  max-width: 100%;
+  overflow: auto;
+  background-color: rgb(77, 74, 72);
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link {
+  float: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+.nav-link:hover {
+  color: orange;
+}
+.language {
+  font-size: 14px;
+}
+
+/*Responsive Styles*/
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  #titleapp {
+    width: 100%;
+  }
+
+  svg {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+/*Mobile*/
+
+
+@media screen and (max-width: 765px) and (min-width: 375px) {
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  #langlog{
+    background-color: inherit;
+    box-shadow: none;
+    width: 40%;
+  }
+
+
+  #titleapp {
+    width: 100%;
+  }
+}

@@ -1,12 +1,33 @@
-<!--<div class="nav-container mb-3 d-flex justify-content-between">
-    <nav  class="navbar-nav navbar-expand-md pl-5">
+<div class="navbar navbar-expand-sm fix-top" id="navbar">
+  <div class="container-fluid">
+    <div class="collapse-navbar-collapse">
+        <!--Home-->
+          <a routerLink="/" class="nav-link" routerLinkActive="router-link-exact-active"
+            [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-fw fa-home"></i>&nbsp;&nbsp;{{ 'HOME.HOMEF' | translate}}</a>
+
+        <!--Profile-->
+          <a routerLink="/profile" class="nav-link" routerLinkActive="router-link-exact-active"><i class="fas fa-user"></i>&nbsp;&nbsp;{{'HOME.PROFILE' | translate }}</a>
+    </div>
+
+
+  <div class="nav-container mb-3 d-flex justify-content-between">
+    <nav>
       <div class="container">
-        <div class="navbar-nav pl-5">
-          <app-main-nav></app-main-nav>
+        <div class="navbar-nav pl-5" id="langlog">
+          <!-- Choose language -->
+
+            <select class="custom-select language" #langselect (change)="setLanguage(langselect.value)"
+              [(ngModel)]="selectLang" name="selectLang">
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
+            </select>
+
+          <!--Login/logout button-->
           <app-login-button *ngIf="(auth.isAuthenticated$ | async) === false"></app-login-button>
-          <app-logout-button *ngIf="auth.isAuthenticated$ | async">
+          <app-logout-button  *ngIf="auth.isAuthenticated$ | async">
           </app-logout-button>
         </div>
       </div>
     </nav>
-  </div> -->
+  </div>
+</div>
+</div>

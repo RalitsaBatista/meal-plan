@@ -1,9 +1,9 @@
 
 <div id="search-component">
     <h4><label for="search-box">{{ 'HOME.SEARCHFOOD' | translate }}</label></h4>
-    <form style="max-width:300px">
-      <input #searchBox id="search-box" (input)="search(searchBox.value)" type="text" placeholder="Search.." name="search2">
-      <button type="submit"><i class="fa fa-search"></i></button>
+    <form class="d-flex input-group w-auto"style="max-width:300px">
+      <input #searchBox id="search-box" (input)="search(searchBox.value)" type="search" class="form-control" placeholder="Search.." aria-label="Search">
+      <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark"><i class="fa fa-search"></i></button>
     </form>
 
     <ul class="search-result">

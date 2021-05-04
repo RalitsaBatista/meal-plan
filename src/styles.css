@@ -3,10 +3,9 @@ html {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Segoe UI", "Roboto", "Oxygen",
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -15,9 +14,9 @@ body {
   }
 
 
-  
+
   @media (max-width: 768px) {
-  
+
   .spinner {
     position: absolute;
     display: flex;
@@ -31,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
   .userImg {
     border-radius: 100px;
     display: block;
@@ -44,7 +43,7 @@ body {
       margin-bottom: 0;
     }
   }
-  
+
   .spinner {
     position: absolute;
     display: flex;
@@ -57,5 +56,5 @@ body {
     left: 0;
     right: 0;
   }*/
-  
+
   }

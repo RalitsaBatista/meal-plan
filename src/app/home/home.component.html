@@ -1,1 +1,17 @@
-<app-frontpage></app-frontpage>
+
+<div id="app" class="column">
+  <div class="container" *ngIf="auth.isLoading$ | async; else loaded">
+    <app-loading></app-loading>
+  </div>
+
+  <ng-template #loaded>
+    <div class="container">
+      <div>
+
+        <app-frontpage></app-frontpage>
+
+      </div>
+    </div>
+    </ng-template>
+    <app-footer class="page-footer font-small fixed-bottom"></app-footer>
+</div>
