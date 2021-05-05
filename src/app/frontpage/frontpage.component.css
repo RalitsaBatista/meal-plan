@@ -11,15 +11,14 @@
   background-position: bottom center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(247, 203, 122, 0.815);
   padding: 0.7em;
-
   height: 55vh;
   background-image: url(https://source.unsplash.com/Iv9Sd16XrQE/1600x900);
 }
-.planning {
-  color: rgb(68, 62, 62);
-  margin: 6rem 0 1rem 0;
+h2 {
+  font-size: 3rem;
+  color: black;
+  margin: 6rem 0 1rem 1rem;
   padding: 5px;
 }
 .card-container {
@@ -60,17 +59,11 @@ a:link {
 
 /*Responsive Styles*/
 @media screen and (max-width: 767px) {
-  .card-container {
-    width: 100% !important;
-
-  }
 
   .card {
     width: 100% !important;
+
   }
-
-
-
 }
 
 

@@ -17,6 +17,7 @@ export class FoodService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
+  editFood: any;
 
   constructor(
     private http: HttpClient,

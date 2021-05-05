@@ -1,27 +1,33 @@
-p {
-  margin: 4px;
+.frontpage{
+  background-color:whitesmoke;
+  border: 1px solid #e06049;
+  color: black;
+  margin-left:5px;
   font-size: 14px;
-  font-family: cursive;
-
 }
-h1 {
+.contInfo{
+    background-image: url(https://source.unsplash.com/24RUrLSW1HI/1600x900);
+    align-items: center;
+    justify-content: center;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0.7em;
+    height: 55vh;
+}
+p {
+  margin: 15px;
+  font-size: 2rem;
+}
 
-  font-size: 22px;
-  font-family: cursive;
-  font-weight: bold;
-  color: rgb(104, 102, 96);
+
+h1, h2 {
+
+  font-size: 4rem;;
+  color: white;
   text-align: center;
 }
-h2 {
 
-  font-size: 18px;
-  font-family: cursive;
-  color: rgb(104, 102, 96);
-  text-align: center;
-}
-.border {
-  border-radius: 5px;
-}
 nav a {
   padding: 5px 10px;
   text-decoration: none;
@@ -37,3 +43,20 @@ nav a:hover {
   color: white;
   background-color: #f3684f;
 }
+
+.card-link{
+   margin: 0 0 5px;
+   color: #3b4151;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   -webkit-transition: all .2s;
+   transition: all .2s;
+   }
+ .card-body{
+   background: whitesmoke;
+ }
+ .row{
+   margin:0;
+ }
+

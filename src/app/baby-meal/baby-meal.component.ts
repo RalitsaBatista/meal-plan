@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../food.service';
 import { Food } from '../food';
-import { FoodDetailComponent } from '../food-detail/food-detail.component';
 
 @Component({
   selector: 'app-baby-meal',
@@ -19,7 +18,7 @@ foods!: Food[];
 
 
 constructor(private foodService: FoodService) { }
-  
+
 ngOnInit() {
   this.getFoods();
 }
@@ -51,7 +50,7 @@ delete(food: Food): void {
   this.item(this.item)
   .subscribe((data: any) => console.log(data), (error: any) => console.log(error));
   this.item = new this.item();
-  
+
 }
   onSubmit(){
   this.added = true;

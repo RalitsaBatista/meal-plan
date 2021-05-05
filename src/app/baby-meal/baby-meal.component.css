@@ -1,11 +1,13 @@
-.babymeal_frontpage{
-  height:100%;
-  width: 100%;;
-  background-color: rgb(243, 212, 146);
+.frontpage{
+    background-color:whitesmoke;
+    border: 1px solid #e06049;
+    color: black;
+    margin-left:5px;
+    font-size: 14px;
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 3em;
   margin-bottom: 0;
 }
 nav a {
@@ -21,10 +23,10 @@ nav a:visited, a:link {
 }
 nav a:hover {
   color: white;
-  background-color: #f3684f;
+  background-color: #e06049;
 }
 nav a.active {
-  color: #f0b548;
+  color: #e06049;
 }
 
 @media screen and (min-width: 375px) {

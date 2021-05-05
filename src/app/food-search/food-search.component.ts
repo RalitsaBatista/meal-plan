@@ -14,7 +14,7 @@ import { FoodService } from '../food.service';
 export class FoodSearchComponent implements OnInit {
   foods!: Observable<Food[]>;
   private searchTerms = new Subject<string>();
-
+  food!: Food;
   constructor(private foodService: FoodService) {}
  // Push a search term into the observable stream.
  search(term: string): void {

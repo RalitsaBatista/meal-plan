@@ -49,11 +49,7 @@
                       <input type="number" (focus)="notFocused=false" class="form-control input-lg" placeholder="{{ 'HOME.FEET' | translate }}" ngModel name="height_feet"
                         required>
                     </div>
-                    <!--
-                    <div class="form-group col-md-5 p-0 d-none">
-                      <input type="number" (focus)="notFocused=false" class="form-control input-lg" placeholder="{{ 'HOME.INCH' | translate }}" ngModel name="height_inch"
-                        required>
-                    </div>-->
+
                   </div>
                   <div class="form-group" *ngIf="show_us_fields">
                     <input type="number" (focus)="notFocused=false" class="form-control input-lg" placeholder="{{ 'HOME.WEIGHTP' | translate }}" ngModel name="weight"
@@ -85,12 +81,12 @@
                   <div class="panel-heading">
                     <div class="row">
                       <div class="col-xs-6 text-center active pr-0">
-                        <button class="btn btn-warning mr-2 pt-2 pb-2" (click)="triggerBtn()" type="button">
+                        <button class="btn mr-2 pt-2 pb-2" style="background-color: #e06049; color: white; font-size:14px;" (click)="triggerBtn()" type="button">
                           {{ 'HOME.CALCULATE' | translate }}
                         </button>
                       </div>
                       <div class="col-xs-6 text-center pl-0">
-                        <button class="btn btn-secondary pt-2 pb-2" (click)="clearForm()" type="button">
+                        <button class="btn btn-secondary pt-2 pb-2" style="font-size:14px;"(click)="clearForm()" type="button">
                           {{ 'HOME.CLEAR' | translate }}
                         </button>
                       </div>

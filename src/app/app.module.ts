@@ -17,7 +17,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FooterComponent } from './footer/footer.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FoodSearchComponent } from './food-search/food-search.component';
-import { FoodDetailComponent } from './food-detail/food-detail.component';
 import { FoodsComponent } from './foods/foods.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 
@@ -40,7 +39,6 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     InfoComponent,
     FooterComponent,
     FoodSearchComponent,
-    FoodDetailComponent,
     FoodsComponent,
     FrontpageComponent,
     LoginButtonComponent,

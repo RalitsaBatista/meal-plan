@@ -1,7 +1,6 @@
+<app-food-search></app-food-search>
 <div class="body-food">
-
-<br>
-<h2>{{ 'HOME.MYBABYMEAL' | translate }}</h2>
+<h1>{{ 'HOME.MYBABYMEAL' | translate }}</h1>
 <div>
   <label class="food_name">{{ 'HOME.FOODNAME' | translate }}:
     <input #foodName />
@@ -12,7 +11,7 @@
   </button>
 </div>
 
-<ul class="foods col-md-6 ml-2">
+<ul class="foods col-md-8 ml-2">
   <li *ngFor="let food of foods" class="col-md-12 row">
     <a class="col-md-8 pl-0 food-item" routerLink="/detail/{{food.id}}">
       <span class="badge">{{food.id}}</span><span class="food-name pl-3">{{food.name}}</span>
@@ -26,3 +25,4 @@
   </li>
 </ul>
 </div>
+<app-scroll-to-top class="scroll"></app-scroll-to-top>
