@@ -1,21 +1,30 @@
 .frontpage{
-  background-color:whitesmoke;
+
   border: 1px solid #e06049;
-  color: black;
   margin-left:5px;
-  font-size: 14px;
+  font-size: 1.5rem;
+}
+.backimg{
+  background-image: url(https://source.unsplash.com/dlxNvA7pVwU/1600x900);
+  /*background-image: url(https://source.unsplash.com/15nvaBz_doc/1600x900);*/
+  justify-content: center;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
 nav a {
   padding: 5px 10px;
   text-decoration: none;
+  color: whitesmoke;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
+  background-color:rgba(245, 245, 245, 0);
   border-radius: 4px;
 }
 nav a:visited, a:link {
-  color: #334953;
+  color: whitesmoke;
 }
 nav a:hover {
   color: white;

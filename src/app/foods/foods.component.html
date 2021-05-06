@@ -1,16 +1,18 @@
-<app-food-search></app-food-search>
+
 <div class="body-food">
 <h1>{{ 'HOME.MYBABYMEAL' | translate }}</h1>
 <div>
-  <label class="food_name">{{ 'HOME.FOODNAME' | translate }}:
-    <input #foodName />
+  <app-food-search></app-food-search>
+  <label class="food_name">
+    <input #foodName placeholder="Add new food..."/>
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
   <button (click)="add(foodName.value); foodName.value=''">
-    {{ 'HOME.ADD' | translate }}
+    <i class="far fa-plus-square"></i>
   </button>
 </div>
 
+<div class="container">
 <ul class="foods col-md-8 ml-2">
   <li *ngFor="let food of foods" class="col-md-12 row">
     <a class="col-md-8 pl-0 food-item" routerLink="/detail/{{food.id}}">
@@ -24,5 +26,7 @@
     </button>
   </li>
 </ul>
+</div>
+
 </div>
 <app-scroll-to-top class="scroll"></app-scroll-to-top>

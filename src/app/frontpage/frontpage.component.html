@@ -4,15 +4,15 @@
 <div class="front m-0" role="main" id="frontpage">
   <!-- Title -->
   <div id="titleapp">
-    <h1>{{ 'HOME.TITLE' | translate }}</h1>
+    <h1>{{ 'HOME.TITLE' | translate }}
+    <br>
+     {{ 'HOME.PLANNING' | translate }}</h1>
   </div>
-  <h2>{{ 'HOME.PLANNING' | translate }}</h2>
-
 
   <nav class="card-container">
 
     <!--Own Meal-->
-    <div class="card mr-3" >
+    <div class="card">
       <a routerLink="/own-meal">
         <i class="fas fa-carrot"></i>&nbsp;&nbsp;
         <span>{{ 'HOME.OWN-MEAL' | translate }}</span>
@@ -20,7 +20,7 @@
     </div>
 
     <!--Baby Meal-->
-    <div class="card mr-3">
+    <div class="card">
       <a routerLink="/baby-meal">
         <i class="fas fa-baby"></i>&nbsp;&nbsp;
         <span>{{ 'HOME.BABY-MEAL' | translate }}</span>
@@ -29,15 +29,12 @@
 
 
     <!--Info-->
-    <div class="card mr-3" > <a routerLink="/info">
+    <div class="card" > <a routerLink="/info">
         <i class="fas fa-info"></i>&nbsp;&nbsp;
         <span>{{ 'HOME.INFORMATION' | translate }}</span>
       </a>
     </div>
-
-
-
-
   </nav>
 
 </div>
+<app-scroll-to-top class="scroll"></app-scroll-to-top>

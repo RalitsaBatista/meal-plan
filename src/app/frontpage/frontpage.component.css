@@ -1,7 +1,10 @@
 
 #titleapp h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
+  margin: 6rem 0 1rem 1rem;
+  padding: 5px;
+  text-align: center;
 }
 
 #titleapp {
@@ -15,12 +18,7 @@
   height: 55vh;
   background-image: url(https://source.unsplash.com/Iv9Sd16XrQE/1600x900);
 }
-h2 {
-  font-size: 3rem;
-  color: black;
-  margin: 6rem 0 1rem 1rem;
-  padding: 5px;
-}
+
 .card-container {
   width: 100%;
   display: flex;
@@ -58,7 +56,7 @@ a:link {
 
 
 /*Responsive Styles*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 375px){
 
   .card {
     width: 100% !important;

@@ -1,23 +1,24 @@
-<nav>
+
+  <nav>
   <a routerLink="/frontpage" class="frontpage "> {{ 'HOME.FRONTPAGE' | translate }}</a>
 </nav>
-
+<br>
 <div class="col">
-  <div class="col-12 contInfo">
+  <div class="row contInfo">
     <h1> {{ 'HOME.info-heading' | translate}}</h1>
-    <p>{{ 'HOME.p1' | translate}}</p>
+  <h2>{{ 'HOME.p1' | translate}}</h2>
   </div>
   <br>
+
   <div class="container">
     <div id="accordion">
-
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseEvents">
-            {{ 'HOME.when' | translate}}</a>
+          <a class="card-link" data-toggle="collapse" href="#collapseWhen">
+            <span>{{ 'HOME.when' | translate}}</span></a>
         </div>
-        <div id="collapseEvents" class="collapse" data-parent="#accordion">
-          <div class="card-body row">
+        <div id="collapseWhen" class="collapse" data-parent="#accordion">
+          <div class="card-body">
             <p>Knowing when to start baby food is both crucial and tricky. Starting baby on solids too early means you
               might increase the risk of choking, obesity and bellyaches, but introducing solids too late means you might
               slow baby’s growth and encourage an aversion to solid foods, among other conditions. Fortunately, doctors
@@ -44,11 +45,10 @@
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapseHow">
-            {{ 'HOME.how' | translate}}
-          </a>
+            <span>{{ 'HOME.how' | translate}}</span></a>
         </div>
         <div id="collapseHow" class="collapse" data-parent="#accordion">
-          <div class="card-body row">
+          <div class="card-body">
             <p>{{ 'HOME.p3' | translate}}</p>
           </div>
         </div>
@@ -57,11 +57,11 @@
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapseBest">
-            {{ 'HOME.best' | translate}}
+            <span>{{ 'HOME.best' | translate}}</span>
           </a>
         </div>
         <div id="collapseBest" class="collapse" data-parent="#accordion">
-          <div class="card-body row">
+          <div class="card-body">
             <p>Got baby safely strapped into the high chair and bib? You’re ready to finally start feeding baby solids!
               There aren’t any official food rules for babies starting solids, and there’s no scientific evidence
               suggesting you should introduce one type of food before another, assuming the foods aren’t choking hazards.
@@ -108,14 +108,14 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card ">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapseAlergies">
-            {{ 'HOME.alergies' | translate}}
+          <span> {{ 'HOME.alergies' | translate}}</span>
           </a>
         </div>
         <div id="collapseAlergies" class="collapse" data-parent="#accordion">
-          <div class="card-body row">
+          <div class="card-body">
             <p>Introducing Allergenic Foods
               Much of the confusion around when to start baby food stems from questions concerning allergenic foods. These are
               foods that babies are most often allergic to. The major culprits include dairy, eggs, fish, peanuts and tree nuts.
@@ -145,6 +145,8 @@
       </div>
     </div>
   </div>
+  <app-scroll-to-top class="scroll"></app-scroll-to-top>
+
 
 
 

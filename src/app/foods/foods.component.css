@@ -12,8 +12,8 @@
 }
 
 h1{
-  color: #e06049;
-  font-size: 5rem;
+  color: rgb(46, 44, 44);
+  font-size: 4rem;
   text-align: center;
 }
 .food_name{
@@ -38,6 +38,7 @@ ul.foods a {
 
 ul.foods a:hover {
   background-color: #e06049;
+  color: white;
 }
 
 ul.foods .badge {

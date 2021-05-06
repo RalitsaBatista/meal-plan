@@ -1,62 +1,90 @@
-.frontpage{
-  background-color:whitesmoke;
+.frontpage {
   border: 1px solid #e06049;
+  border-radius: 4px;
   color: black;
-  margin-left:5px;
-  font-size: 14px;
-}
-.contInfo{
-    background-image: url(https://source.unsplash.com/24RUrLSW1HI/1600x900);
-    align-items: center;
-    justify-content: center;
-    background-position: bottom center;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 0.7em;
-    height: 55vh;
-}
-p {
-  margin: 15px;
-  font-size: 2rem;
-}
-
-
-h1, h2 {
-
-  font-size: 4rem;;
-  color: white;
-  text-align: center;
-}
-
-nav a {
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
   border-radius: 4px;
+  margin-left: 5px;
+  font-size: 1.5rem;
 }
-nav a:visited, a:link {
-  color: #334953;
-}
-nav a:hover {
+
+.frontpage:hover {
   color: white;
   background-color: #f3684f;
 }
+.contInfo {
+  background-image: url(https://source.unsplash.com/XbZgARqXROc/1600x900);
+  align-items: center;
+  justify-content: center;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 65vh;
+  display: flex;
+}
 
-.card-link{
-   margin: 0 0 5px;
-   color: #3b4151;
-   display: flex;
-   align-items: center;
-   cursor: pointer;
-   -webkit-transition: all .2s;
-   transition: all .2s;
-   }
- .card-body{
-   background: whitesmoke;
- }
- .row{
-   margin:0;
- }
+h1 {
+  font-size: 4rem;
+  color: rgb(59, 58, 56);
+  text-align: center;
+  margin: 6rem 5px 0 50%;
+  padding: 5px;
+}
+h2 {
+  color: rgb(59, 58, 56);
+  text-align: right;
+  margin-left: 55%;
+  margin-right: 5px;
+}
+.container{
+  display: flex;
 
+  width: 100% !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.card {
+  cursor: pointer;
+  height: 200px !important;
+  justify-content: center;
+  align-items: center;
+  width: 32% !important;
+}
+.card-container a {
+  height: 200px !important;
+  text-decoration: none;
+  font-size: 2.5rem;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important ;
+  color: rgb(78, 72, 64);
+}
+.card-header{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card-header:hover{
+  background-color: rgb(230, 224, 224);
+}
+
+@media screen and (max-width: 765px) and (min-width: 375px) {
+  .contInfo{
+    width: 100% !important;
+  }
+  .card {
+    width: 100% !important;
+
+  }
+}
