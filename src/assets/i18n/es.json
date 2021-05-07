@@ -11,7 +11,6 @@
         "RECIPES": "Recetas",
         "FOOTER": "QUÉ HAY DE COMER",
         "BACK": "Volver al principio",
-
         "USUN": "EE.UU Unidades",
         "METRIC": "Unidades metricas",
         "MALE": "Hombre",
@@ -36,7 +35,8 @@
         "BODYFAT": "Grasa corporal (p. Ej., 14%) - (Opcional)",
         "FRONTPAGE": "Página inicial",
         "PROFILE": "Perfil",
-
+        "HOMEF": "Inicio",
+        "ABOUT": "Acerca",
         "MYBABYMEAL": "Los platos de mi bebe",
         "FOODS":"Comida",
         "SEARCHFOOD": "Registrar comida",
@@ -60,11 +60,9 @@
         "when": "Cuando empezar los solidos",
         "p2": "",
         "how": "Como empezar los solidos",
-        "p3": "At 4 to 6 months, most of baby’s nutrition will still come from breast milk or formula, so don’t worry if baby doesn’t like eating food right away. Introducing solids is a gradual process, and every baby learns in their own time. Here are some general guidelines for how to start baby on solids: • Feed baby with a spoon. Letting your child go at it with their hands may seem tempting (and super-cute), but it’s best that they learn the right way from the get-go. (And even then, be prepared to clean up more than a few messes!) Also, never put cereal (or any other food) in baby’s bottle—it’s a choking hazard. • Start slowly. When introducing solids, a half spoonful will do at first—you may even want to talk baby through it (“Yummy!”). To make it easier for baby to get accustomed to the idea of swallowing solids, start mealtime with a little breast milk or formula, then offer some food (again, no more than a half teaspoon at a time) and finish off with more breast milk or formula. If baby cries or turns away when you present the spoon, try again some other time. Start off with introducing solids at one meal a day, then slowly work your way up. The morning is a good place to start, since baby is often hungriest at that time. When starting solids, baby typically won’t eat more than an ounce or two in one sitting. • Try new foods more than once. Since babies’ tastes will evolve, you may need to try a food 20 times before a baby actually likes it, says Kupersmith. • Stick with the same food for three days before trying another one. This makes it easy to track whether baby is allergic to a particular food. • Try foods in different forms. If baby doesn’t like pureed food, try it mashed. After all, baby is learning about new textures as well as new tastes. It may be a case of trial and error until you find a winner.",
+        "p3": "A los 4 o 6 meses, most of baby’s nutrition will still come from breast milk or formula, so don’t worry if baby doesn’t like eating food right away. Introducing solids is a gradual process, and every baby learns in their own time. Here are some general guidelines for how to start baby on solids: • Feed baby with a spoon. Letting your child go at it with their hands may seem tempting (and super-cute), but it’s best that they learn the right way from the get-go. (And even then, be prepared to clean up more than a few messes!) Also, never put cereal (or any other food) in baby’s bottle—it’s a choking hazard. • Start slowly. When introducing solids, a half spoonful will do at first—you may even want to talk baby through it (“Yummy!”). To make it easier for baby to get accustomed to the idea of swallowing solids, start mealtime with a little breast milk or formula, then offer some food (again, no more than a half teaspoon at a time) and finish off with more breast milk or formula. If baby cries or turns away when you present the spoon, try again some other time. Start off with introducing solids at one meal a day, then slowly work your way up. The morning is a good place to start, since baby is often hungriest at that time. When starting solids, baby typically won’t eat more than an ounce or two in one sitting. • Try new foods more than once. Since babies’ tastes will evolve, you may need to try a food 20 times before a baby actually likes it, says Kupersmith. • Stick with the same food for three days before trying another one. This makes it easy to track whether baby is allergic to a particular food. • Try foods in different forms. If baby doesn’t like pureed food, try it mashed. After all, baby is learning about new textures as well as new tastes. It may be a case of trial and error until you find a winner.",
         "best": "Los primeros alimentos para bebés más adecuados",
         "p4": "",
         "alergies":"Alergias"
-
-
     }
 }

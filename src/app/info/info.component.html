@@ -6,20 +6,20 @@
 <div class="col">
   <div class="row contInfo">
     <h1> {{ 'HOME.info-heading' | translate}}</h1>
-  <h2>{{ 'HOME.p1' | translate}}</h2>
+  <h2 class="row d-none d-lg-block">{{ 'HOME.p1' | translate}}</h2>
   </div>
   <br>
 
-  <div class="container">
-    <div id="accordion">
+  <div id="container">
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseWhen">
-            <span>{{ 'HOME.when' | translate}}</span></a>
+          <p>
+          <a class="card-link" data-toggle="collapse" href="#collapseWhen" role="button" aria-expanded="false" area-controls="collapseWhen">
+            {{ 'HOME.when' | translate}}</a></p>
         </div>
-        <div id="collapseWhen" class="collapse" data-parent="#accordion">
+        <div id="collapseWhen" class="collapse" >
           <div class="card-body">
-            <p>Knowing when to start baby food is both crucial and tricky. Starting baby on solids too early means you
+            Knowing when to start baby food is both crucial and tricky. Starting baby on solids too early means you
               might increase the risk of choking, obesity and bellyaches, but introducing solids too late means you might
               slow baby’s growth and encourage an aversion to solid foods, among other conditions. Fortunately, doctors
               have zeroed in on a sweet spot for starting baby food, which is sometime between 4 and 6 months of
@@ -37,32 +37,32 @@
               <br>
               • Baby can move food to the back of their throat to swallow. But if baby tends to push the food out of their
               mouth—not because they don’t like it, but because they can’t seem to get the food to where it needs to
-              go—hold off on starting solids.</p>
+              go—hold off on starting solids.
           </div>
         </div>
       </div>
 
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseHow">
-            <span>{{ 'HOME.how' | translate}}</span></a>
+          <a class="card-link" data-toggle="collapse" href="#collapseHow" role="button" aria-expanded="false" area-controls="collapseHow">
+            {{ 'HOME.how' | translate}}</a>
         </div>
-        <div id="collapseHow" class="collapse" data-parent="#accordion">
+        <div id="collapseHow" class="collapse">
           <div class="card-body">
-            <p>{{ 'HOME.p3' | translate}}</p>
+            {{ 'HOME.p3' | translate}}
           </div>
         </div>
       </div>
 
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseBest">
-            <span>{{ 'HOME.best' | translate}}</span>
+          <a class="card-link" data-toggle="collapse" href="#collapseBest" role="button" aria-expanded="false" area-controls="collapseBest">
+            {{ 'HOME.best' | translate}}
           </a>
         </div>
-        <div id="collapseBest" class="collapse" data-parent="#accordion">
+        <div id="collapseBest" class="collapse">
           <div class="card-body">
-            <p>Got baby safely strapped into the high chair and bib? You’re ready to finally start feeding baby solids!
+             <p>  Got baby safely strapped into the high chair and bib? You’re ready to finally start feeding baby solids!
               There aren’t any official food rules for babies starting solids, and there’s no scientific evidence
               suggesting you should introduce one type of food before another, assuming the foods aren’t choking hazards.
               Nevertheless, baby cereal (such as oatmeal, rice and barley) is an “easy training food,” says Kupersmith,
@@ -70,32 +70,19 @@
               to a thicker consistency. Many doctors also recommend starting vegetables before fruits, but there’s no
               evidence that this would make babies like vegetables more when they grow up—babies innately love sweets, and
               the order of introducing solids to baby doesn’t change that.
-
               So why not simply start introducing solids with something you think baby will like? Here are a few common
               first foods for baby that are healthy and easy to eat (and, in the case sweet potato and banana, also easy
               to digest). Whatever you decide to feed baby, mash it with a fork or puree before serving whenever
               introducing solids.
-
-              Baby cereal, such as oatmeal, rice, barley
-
-                Sweet potato
-
-                Banana
-                Avocado
-                Apples
-                Pears
-                Green beans
-                Butternut squash
-              If your child has been breastfeeding, check with your pediatrician about getting a jump on pureed chicken or
+              Baby cereal, such as oatmeal, rice, barley. Sweet potato,Banana,Avocado,Apples, Pears,Green beans, Butternut squash...
+              <!--If your child has been breastfeeding, check with your pediatrician about getting a jump on pureed chicken or
               beef when you’re starting solids. These foods contain easily absorbable forms of iron and zinc, which baby
               needs by 4 to 6 months, according to the AAP.
-
               At around 9 months, baby should have already worked their way up to a variety of foods, including cereal,
               vegetables, fruits, meats, eggs and fish (see below regarding the last two). (Keep in mind, though, that
               baby will still get the majority of their nutrients from breast milk or formula until age one.) By now, baby
               will probably settle on three meals a day along with two snacks. Let them consume about 4 ounces of solids
               at each meal (equivalent to a small jar of strained baby food) and about half that amount for each snack.
-
               Save honey and cow’s milk for after baby’s first birthday—there’s a risk for infant botulism with honey (a
               type of bacterial poisoning), and baby’s tummy isn’t prepared to digest large amounts of cow’s milk until
               they’re about one year old. Avoid adult processed foods and foods that are choking hazards (such as sticky
@@ -103,20 +90,20 @@
               seeds and popcorn; and round, slippery foods that haven’t been cut up, like grapes and cherry tomatoes).
               Instead, the first foods for baby, and those in the months that follow, should be soft and served mashed,
               pureed or (once baby seems ready to move up from the really mushy stuff) cut up into really little bits.
-              “There’s pretty much free reign at that point,” Kupersmith says.</p>
+              “There’s pretty much free reign at that point,” Kupersmith says. --></p>
           </div>
         </div>
       </div>
 
       <div class="card ">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseAlergies">
-          <span> {{ 'HOME.alergies' | translate}}</span>
+          <a class="card-link" data-toggle="collapse" href="#collapseAlergies" role="button" aria-expanded="false" area-controls="collapseAlergies">
+          {{ 'HOME.alergies' | translate}}
           </a>
         </div>
-        <div id="collapseAlergies" class="collapse" data-parent="#accordion">
+        <div id="collapseAlergies" class="collapse">
           <div class="card-body">
-            <p>Introducing Allergenic Foods
+            Introducing Allergenic Foods
               Much of the confusion around when to start baby food stems from questions concerning allergenic foods. These are
               foods that babies are most often allergic to. The major culprits include dairy, eggs, fish, peanuts and tree nuts.
               In the past, parents were advised to hold off on exposing baby to these foods, but now doctors recommend introducing
@@ -139,11 +126,11 @@
               mild (such as a rash or vomiting) to severe (such as trouble breathing). If baby has a food allergy, you’ll notice a
               reaction within minutes or up to two hours after eating the problematic food, Stukus says. If the symptoms are
               severe, call 112 right away. Otherwise, talk to your pediatrician; she can help confirm whether it’s an allergy or
-              some other type of condition (such as a viral illness).</p>
+              some other type of condition (such as a viral illness).
           </div>
         </div>
       </div>
-    </div>
+
   </div>
   <app-scroll-to-top class="scroll"></app-scroll-to-top>
 

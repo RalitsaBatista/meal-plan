@@ -31,6 +31,7 @@ import { LoginButtonComponent } from './login-button/login-button.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     LoadingComponent,
     NavBarComponent,
     HomeComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

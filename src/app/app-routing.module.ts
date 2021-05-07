@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BabyMealComponent } from './baby-meal/baby-meal.component';
-
+import{ AboutComponent } from './about/about.component';
 import { FoodSearchComponent } from './food-search/food-search.component';
 import { FoodsComponent } from './foods/foods.component';
 import { OwnMealComponent } from './own-meal/own-meal.component';
@@ -21,10 +21,11 @@ const routes: Routes = [
     canActivate: [AuthGuard]
 
   },
+  { path: 'about', component: AboutComponent },
   { path: 'frontpage', component: FrontpageComponent },
   { path: 'own-meal', component: OwnMealComponent },
   { path: 'baby-meal', component: BabyMealComponent},
-  {path: 'foods', component: FoodsComponent},
+  { path: 'foods', component: FoodsComponent},
   { path: 'food-search', component: FoodSearchComponent},
   { path: 'info', component: InfoComponent},
 ];

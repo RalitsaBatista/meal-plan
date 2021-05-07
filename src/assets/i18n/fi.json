@@ -35,6 +35,8 @@
         "BODYFAT": "Kehon rasva (esim. 14%) - (valinnainen)",
         "FRONTPAGE": "Etusivu",
         "PROFILE": "Profiili",
+        "HOMEF": "Home",
+        "ABOUT": "About",
         "MYBABYMEAL": "Vauvan ateria",
         "FOODS":"Ruoka",
         "SEARCHFOOD": "Etsi ruokaa",
@@ -54,7 +56,7 @@
         "WEEK":"viikossa",
         "info-intro": "Kiinteitä vauvalle ensimmäisenä",
         "info-heading": "Mielenkiintoista tietoa kiinteiden aloittamisesta",
-        "p1": "Kiinteiden aloittaminen on jännittävä ja tärkeä hetki vauvan kehityksessä - joka paitsi avaa heidät aivan uudelle makujen ja tekstuurien maailmalle, myös asettaa ne oikealle tielle kasvaa terveeksi ja vahvaksi. Tässä on, mitä sinun on tiedettävä siitä, miten ja milloin aloitetaan vauvanruoka sujuvan siirtymisen saavuttamiseksi.",
+        "p1": "Kiinteiden aloittaminen on jännittävä ja tärkeä hetki vauvan kehityksessä - joka sekä avaa heille uuden makujen ja tekstuurien maailman, mutta myös asettaa ne oikealle tielle kasvamaan terveinä ja vahvina. Tässä on, mitä sinun on tiedettävä siitä, miten ja milloin aloitetaan kiinteät sujuvan siirtymisen saavuttamiseksi.",
         "when": "Milloin aloitetaan kiinteät",
         "p2": "",
         "how": "Miten aloitetaan kiinteät",
@@ -62,7 +64,5 @@
         "best": "Sopivin ensiruoat vauvoille",
         "p4": "",
         "alergies":"Allergiat"
-
-
     }
 }
