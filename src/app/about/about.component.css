@@ -1,3 +1,10 @@
+.frontpage{
+  background-color:whitesmoke;
+  border: 1px solid #e06049;
+  color: black;
+  margin-left:5px;
+  font-size: 1.5rem;
+}
 p{
   font-size: 2rem;
   padding: 10px;
