@@ -1,15 +1,11 @@
-.frontpage{
-    background-color:whitesmoke;
-    border: 1px solid #e06049;
-    color: black;
-    margin-left:5px;
-    font-size: 1.5rem;
+.frontpage {
+  background-color: whitesmoke;
+  border: 1px solid #e06049;
+  color: black;
+  margin-left: 5px;
+  font-size: 1.5rem;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 0;
-}
 nav a {
   padding: 5px 10px;
   text-decoration: none;
@@ -18,7 +14,8 @@ nav a {
   background-color: #eee;
   border-radius: 4px;
 }
-nav a:visited, a:link {
+nav a:visited,
+a:link {
   color: #334953;
 }
 nav a:hover {
@@ -30,16 +27,7 @@ nav a.active {
 }
 
 @media screen and (min-width: 375px) {
-
-
 }
 
-@media screen and (min-width: 425px) {}
-
-
-
-
-
-
-
-
+@media screen and (min-width: 425px) {
+}

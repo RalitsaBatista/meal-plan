@@ -3,13 +3,23 @@
 <h1>{{ 'HOME.MYBABYMEAL' | translate }}</h1>
 <div>
   <app-food-search></app-food-search>
+
+  <form class="d-flex input-group w-auto"style="max-width:30%; font-size: 1.5rem;margin-left: 20px; margin-bottom:5px;">
+    <input #foodName placeholder="Add new food..."/>
+    <button (click)="add(foodName.value); foodName.value=''">
+      <i class="fas fa-plus-square"></i>
+    </button>
+  </form>
+
+
+<!--
   <label class="food_name">
     <input #foodName placeholder="Add new food..."/>
-  </label>
+  </label>-->
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(foodName.value); foodName.value=''">
+  <!--<button (click)="add(foodName.value); foodName.value=''">
     <i class="far fa-plus-square"></i>
-  </button>
+  </button>-->
 </div>
 
 <div class="container">

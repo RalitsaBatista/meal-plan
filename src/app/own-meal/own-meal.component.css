@@ -37,16 +37,19 @@ nav a:hover {
   margin:0;
   /*padding-left: 16px;*/
   cursor: pointer;
+  font-size: 2rem;
 }
 .label-text {
   position: absolute;
   left: 40px;
   top: 2px;
+  font-size: 1.5rem;
 }
 input[type="radio"] {
   height: 1px;
   width: 1px;
   opacity: 0;
+  font-size: 2rem;
 }
 
 .outside {
@@ -59,7 +62,7 @@ input[type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: none;
-
+  font-size: 2rem;
 }
 
 .inside {
@@ -77,6 +80,7 @@ input[type="radio"] {
   top: 3px;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
+  font-size: 2rem;
 }
 
 .no-transforms .inside {
@@ -135,7 +139,7 @@ input:checked+.outside .inside {
   border: 1px solid #e06049;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-
+  font-size: 2rem;
 }
 .panel-login {
   padding:20px;
@@ -161,11 +165,13 @@ input:checked+.outside .inside {
   padding: 5px;
   cursor: pointer;
   border-radius: 4px;
+  font-size: 2rem;
 }
 
 .sub_btn {
   background-color: #e06049;
   border-radius: 4px;
+  font-size: 2rem;
 }
 
 .clear_btn {
@@ -189,6 +195,7 @@ input:checked+.outside .inside {
   padding: 5px;
   border-bottom: solid 2px #e06049;
   border-radius: 4px;
+  font-size: 2rem;
 }
 
 .width {
@@ -204,7 +211,7 @@ input:checked+.outside .inside {
 .form-control {
   display: block;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 1.5rem;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
@@ -217,6 +224,7 @@ input:checked+.outside .inside {
 
 .text-light {
   color: white;
+  font-size: 2rem;
 }
 
 .d-none {

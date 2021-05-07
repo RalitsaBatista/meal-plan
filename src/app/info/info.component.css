@@ -75,6 +75,7 @@ h2 {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   font-size: 2.5rem;
+  display: flex;
 }
 .card-header a {
   color: rgb(78, 72, 64);
