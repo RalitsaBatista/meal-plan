@@ -1,34 +1,44 @@
-.frontpage{
 
-  border: 1px solid #e06049;
-  margin-left:5px;
-  font-size: 1.5rem;
-}
-.backimg{
-  background-image: url(https://source.unsplash.com/dlxNvA7pVwU/1600x900);
-  /*background-image: url(https://source.unsplash.com/15nvaBz_doc/1600x900);*/
+
+::ng-deep body{
+  background-image: url(https://source.unsplash.com/15nvaBz_doc/1600x900);
   justify-content: center;
-  background-position: bottom center;
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  background-repeat: no-repeat;
+}
+.frontpage {
+  background-color: whitesmoke;
+  border: 1px solid #e06049;
+  color: black;
+  margin-left: 5px;
+  font-size: 1.5rem;
 }
 
 nav a {
   padding: 5px 10px;
   text-decoration: none;
-  color: whitesmoke;
   margin-top: 10px;
   display: inline-block;
-  background-color:rgba(245, 245, 245, 0);
+  background-color: #eee;
   border-radius: 4px;
 }
-nav a:visited, a:link {
-  color: whitesmoke;
+nav a:visited,
+a:link {
+  color: #334953;
 }
 nav a:hover {
   color: white;
   background-color: #e06049;
+}
+nav a.active {
+  color: #e06049;
+}
+
+.container{
+  margin-top: 5rem;
 }
 
 /* Radio Button */

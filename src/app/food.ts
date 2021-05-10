@@ -1,7 +1,6 @@
 export interface Food {
-    foods: any;
-
+    //foods: any;
     id: number;
     name: string;
-    favourite: boolean;
+    //favourite: boolean;
   }

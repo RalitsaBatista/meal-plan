@@ -15,12 +15,13 @@ export class FoodSearchComponent implements OnInit {
   foods!: Observable<Food[]>;
   private searchTerms = new Subject<string>();
   food!: Food;
-  constructor(private foodService: FoodService) {}
+  constructor(private foodService: FoodService
+    ) {}
  // Push a search term into the observable stream.
  search(term: string): void {
   this.searchTerms.next(term);
 }
-  ngOnInit(): void {
+  ngOnInit():void {
     this.foods = this.searchTerms.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
@@ -31,5 +32,5 @@ export class FoodSearchComponent implements OnInit {
       // switch to new search observable each time the term changes
       switchMap((term: string) => this.foodService.searchFoods(term)),
     );
-  }
+}
 }

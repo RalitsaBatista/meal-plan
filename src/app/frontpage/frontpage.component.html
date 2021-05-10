@@ -1,12 +1,11 @@
 <app-nav-bar></app-nav-bar>
 
 <!-- Frontpage content-->
-<div class="front m-0" role="main" id="frontpage">
+<div class="front" role="main" id="frontpage">
   <!-- Title -->
   <div id="titleapp">
-    <h1>{{ 'HOME.TITLE' | translate }}
-    <br>
-     {{ 'HOME.PLANNING' | translate }}</h1>
+    <h1>{{ 'HOME.TITLE' | translate }}</h1>
+     <p>{{ 'HOME.PLANNING' | translate }}</p>
   </div>
 
   <nav class="card-container">
@@ -29,12 +28,13 @@
 
 
     <!--Info-->
-    <div class="card" > <a routerLink="/info">
+    <div class="card" >
+      <a routerLink="/info">
         <i class="fas fa-info"></i>&nbsp;&nbsp;
         <span>{{ 'HOME.INFORMATION' | translate }}</span>
       </a>
     </div>
   </nav>
-
 </div>
-<app-scroll-to-top class="scroll"></app-scroll-to-top>
+
+<app-footer></app-footer>

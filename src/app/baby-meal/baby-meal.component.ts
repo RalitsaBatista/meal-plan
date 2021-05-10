@@ -19,11 +19,9 @@ foods!: Food[];
 
 constructor(private foodService: FoodService) { }
 
-ngOnInit() {
-  this.getFoods();
-}
+ngOnInit() {}
 
-getFoods(): void {
+/*getFoods(): void {
   this.foodService.getFoods()
   .subscribe((foods: string | any[]) => foods = foods.slice(1, 5));
 }

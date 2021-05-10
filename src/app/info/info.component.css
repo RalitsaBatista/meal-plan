@@ -17,14 +17,21 @@
   background-color: #f3684f;
 }
 .contInfo {
-  background-image: url(https://source.unsplash.com/XbZgARqXROc/1600x900);
+  color: rgb(59, 58, 56);
+  text-align: right;
+  height: 60vh;
+  font-size: 2.5rem;
   align-items: center;
   justify-content: center;
-  background-position: bottom center;
+  background-position:  center;
   background-attachment: fixed;
   background-size: cover;
-  height: 65vh;
-  display: flex;
+  background-color: whitesmoke;
+  background-image: url(https://source.unsplash.com/XbZgARqXROc/1600x900) !important;
+}
+
+.contInfo li{
+  list-style-type: none;
 }
 
 h1 {
@@ -37,61 +44,35 @@ h1 {
 h2 {
   color: rgb(59, 58, 56);
   text-align: right;
-  margin-left: 55%;
-  margin-right: 5px;
+  margin: 7rem 5px 0 55%;
   font-size: 2.5rem;
-}
-#container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-#container > .card {
-  width: 24%;
-  cursor: pointer;
-  height: 100px !important;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
 }
 
-.card-container a {
-  height: 200px !important;
-  text-decoration: none;
+.bbb{
+position: relative; /* required */
+font-size: 2rem;
+}
+.list-group{
+    position: sticky; /* Supported in latest version of Chrome, Firefox, Safari, Opera and Edge browsers */
+    top: 15px;
+}
+.list-group-item.active{
+  background-color:rgb(170, 165, 165);
+  border-color: rgb(121, 70, 70);
+}
+
+.container {
+ width: 100%;
+}
+
+.infodescription{
   font-size: 2.5rem;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  width: 100% !important ;
-  color: rgb(78, 72, 64);
-}
-.card-header {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  font-size: 2.5rem;
-  display: flex;
-}
-.card-header a {
-  color: rgb(78, 72, 64);
-}
-.card-header:hover {
-  background-color: rgb(230, 224, 224);
-}
-.card-body{
-  font-size: 2rem;
 }
 
 @media screen and (max-width: 765px) and (min-width: 375px) {
   .contInfo {
     width: 100% !important;
+
   }
-  #container > .card {
-    width: 100% !important;
-  }
+
 }

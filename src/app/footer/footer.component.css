@@ -1,11 +1,26 @@
-.page-footer {
-  position:relative;
+.fff {
   text-align: center;
   background-color: rgb(77, 74, 72);
   color: white;
   padding: 2px;
   font-size: 1.5rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute !important;
+  height: auto;
 }
+
 .fab{
   color: white;
+}
+/*Responsive Styles*/
+@media screen and (max-width: 765px) and (min-width:425px){
+
+  .fff{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute !important;
+  }
 }

@@ -1,16 +1,5 @@
 
-.body-food{
-  align-items: center;
-  justify-content: center;
-  background-position: bottom center;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 0.7em;
-  height: 100vh;
-  background-color: whitesmoke;
-  background-image: url(https://source.unsplash.com/BYpBzfyKP_I/1600x900);
-}
-
+/*.body-food{*/
 h1{
   color: rgb(46, 44, 44);
   font-size: 4rem;

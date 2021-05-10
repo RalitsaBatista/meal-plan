@@ -11,9 +11,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-y: scroll;
+    position:relative;
   }
-
-
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
   @media (max-width: 768px) {
 

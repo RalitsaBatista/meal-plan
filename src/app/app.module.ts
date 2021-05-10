@@ -23,6 +23,9 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { AuthModule, AuthHttpInterceptor } from '@auth0/auth0-angular';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment as env } from '../environments/environment';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutButtonComponent } from './logout-button/logout-button.component';
@@ -60,6 +63,8 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     MatSliderModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(env.firebase),
+    AngularFireDatabaseModule,
     AuthModule.forRoot({
       ...env.auth,
       httpInterceptor: {
@@ -78,7 +83,8 @@ import { AboutComponent } from './about/about.component';
     MatDatepickerModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {  dataEncapsulation: false, passThruUnknownUrl: true }
-    )
+    ),
+
 
   ],
 

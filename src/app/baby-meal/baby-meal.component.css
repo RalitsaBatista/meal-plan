@@ -1,31 +1,31 @@
-.frontpage {
+::ng-deep body {
+  align-items: center;
+  justify-content: center;
+  background-position:  center;
+  background-attachment: fixed;
+  background-size: cover;
   background-color: whitesmoke;
-  border: 1px solid #e06049;
-  color: black;
-  margin-left: 5px;
-  font-size: 1.5rem;
+  background-image: url(https://source.unsplash.com/BYpBzfyKP_I/1600x900) !important;
 }
 
-nav a {
+.frontpage {
+  border: 1px solid #e06049;
+  border-radius: 4px;
+  color: black;
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
   border-radius: 4px;
-}
-nav a:visited,
-a:link {
-  color: #334953;
-}
-nav a:hover {
-  color: white;
-  background-color: #e06049;
-}
-nav a.active {
-  color: #e06049;
+  margin-left: 5px;
+  font-size: 1.5rem;
 }
 
+.frontpage:hover {
+  color: white;
+  background-color: #f3684f;
+}
 @media screen and (min-width: 375px) {
 }
 
