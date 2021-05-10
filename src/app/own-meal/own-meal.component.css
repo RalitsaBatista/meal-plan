@@ -1,6 +1,6 @@
 
 
-::ng-deep body{
+.backimg{
   background-image: url(https://source.unsplash.com/15nvaBz_doc/1600x900);
   justify-content: center;
   background-position: center center;

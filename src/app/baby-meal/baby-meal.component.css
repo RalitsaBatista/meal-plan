@@ -1,4 +1,4 @@
-::ng-deep body {
+.containerBM {
   align-items: center;
   justify-content: center;
   background-position:  center;
@@ -6,6 +6,7 @@
   background-size: cover;
   background-color: whitesmoke;
   background-image: url(https://source.unsplash.com/BYpBzfyKP_I/1600x900) !important;
+  height: 100vh;
 }
 
 .frontpage {
