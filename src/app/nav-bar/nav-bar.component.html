@@ -17,16 +17,23 @@
       <div class="container">
         <div class="navbar-nav pl-5" id="langlog">
           <!-- Choose language -->
-
+          <div class="d-flex flex-column">
+          <div *ngIf="auth.user$ | async as user" class="text-right text-light ml-2" style="font-size: 14px;">&nbsp;</div>
             <select class="custom-select language" #langselect (change)="setLanguage(langselect.value)"
               [(ngModel)]="selectLang" name="selectLang">
               <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
             </select>
-
+           </div>
           <!--Login/logout button-->
-          <app-login-button *ngIf="(auth.isAuthenticated$ | async) === false"></app-login-button>
-          <app-logout-button  *ngIf="auth.isAuthenticated$ | async">
-          </app-logout-button>
+
+          <div class="d-flex ">
+            <app-login-button *ngIf="(auth.isAuthenticated$ | async) === false"></app-login-button>
+          <div class="d-flex flex-column">
+            <div *ngIf="auth.user$ | async as user" class="text-right text-light ml-2" style="font-size: 14px;">{{ user.email }}</div>
+            <app-logout-button  *ngIf="auth.isAuthenticated$ | async">
+            </app-logout-button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

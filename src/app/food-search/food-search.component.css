@@ -1,8 +1,4 @@
 /* FoodSearch private styles */
-#search-component {
-  width: 75%;
-  margin-left: 2rem;
-}
 
 .search-result li {
     border-bottom: 1px solid #e06049;

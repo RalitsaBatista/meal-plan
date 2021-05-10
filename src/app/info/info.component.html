@@ -2,24 +2,24 @@
   <a routerLink="/frontpage" class="frontpage "> {{ 'HOME.FRONTPAGE' | translate }}</a>
 </nav>
 <div class="contInfo">
-  <h1> {{ 'HOME.info-heading' | translate}}</h1>
-  <h2>{{ 'HOME.p1' | translate}}</h2>
+  <h1 class="text-right pr-5"> {{ 'HOME.info-heading' | translate}}</h1>
+  <h3 class="d-none d-lg-block float-right pr-5  text-right col-lg-5 mt-5">{{ 'HOME.p1' | translate}}</h3>
 
 </div>
-  <div class="bbb" data-spy="scroll" data-offset="15" data-target="#myScrollspy">
+  <div class="bbb" >
     <div class="container">
-      <div class="list-group col-sm-3 float-right" id="myScrollspy">
-        <a class="list-group-item list-group-item-action active" href="/info#section1">{{ 'HOME.when' | translate}}</a>
-        <a class="list-group-item list-group-item-action" href="/info#section2">{{ 'HOME.how' | translate}}</a>
-        <a class="list-group-item list-group-item-action" href="/info#section3"> {{ 'HOME.best' | translate}}</a>
-        <a class="list-group-item list-group-item-action" href="/info#section4"> {{ 'HOME.allergies' | translate}}</a>
+      <div class="list-group col-sm-3 float-right d-none d-lg-block" id="myScrollspyNav">
+        <a class="list-group-item list-group-item-action" href="#section1">{{ 'HOME.when' | translate}}</a>
+        <a class="list-group-item list-group-item-action" href="#section2">{{ 'HOME.how' | translate}}</a>
+        <a class="list-group-item list-group-item-action" href="#section3"> {{ 'HOME.best' | translate}}</a>
+        <a class="list-group-item list-group-item-action" href="#section4" > {{ 'HOME.allergies' | translate}}</a>
       </div>
       <div class="row mt-5" style="font-size:2rem; color: black;">
-        <div class="col-sm-9" id="myScrollspy">
-          <div class="col-sm-9" >
-            <div id="section1">
-              <h2>{{ 'HOME.when' | translate}}</h2>
-              <p>Knowing when to start baby food is both crucial and tricky. Starting baby on solids too early means you
+        <div class="row" >
+          <div class="col-sm-11 m-3 mb-5" data-spy2="scroll" data-offset="0" data-target="#myScrollspyNav">
+
+              <h2 class="mb-3 mb-5 mt-5" id="section1">{{ 'HOME.when' | translate}}</h2>
+              <p >Knowing when to start baby food is both crucial and tricky. Starting baby on solids too early means you
                 might increase the risk of choking, obesity and bellyaches, but introducing solids too late means you
                 might
                 slow baby’s growth and encourage an aversion to solid foods, among other conditions. Fortunately,
@@ -30,7 +30,7 @@
                 according to the American Academy of Pediatrics (AAP). How to tell if it’s time for starting solids for
                 your
                 little one? Baby will give you clues, including:</p>
-              <p>• Baby can sit in a high chair comfortably on their own. This is a major sign in terms of when to start
+              <p >• Baby can sit in a high chair comfortably on their own. This is a major sign in terms of when to start
                 baby
                 food, says Lauren Kupersmith, MD, a pediatrician at Hassenfeld Children’s Hospital at NYU Langone in New
                 York City. It means baby can hold their head up and doesn’t need to be propped up to stay in the upright
@@ -43,15 +43,15 @@
                 mouth—not because they don’t like it, but because they can’t seem to get the food to where it needs to
                 go—hold
                 off on starting solids.</p>
-            </div>
+
             <hr>
-            <div id="section2">
-              <h2>{{ 'HOME.how' | translate}}</h2>
+
+              <h2 class="mb-3 mb-5 mt-5" id="section2" >{{ 'HOME.how' | translate}}</h2>
               <p>{{ 'HOME.p3' | translate}}</p>
-            </div>
+
             <hr>
-            <div id="section3">
-              <h2>{{ 'HOME.best' | translate}}</h2>
+
+              <h2 class="mb-3 mb-5 mt-5" id="section3">{{ 'HOME.best' | translate}}</h2>
               <p>Got baby safely strapped into the high chair and bib? You’re ready to finally start feeding baby
                 solids!
                 There aren’t any official food rules for babies starting solids, and there’s no scientific evidence
@@ -102,10 +102,10 @@
                 mashed,
                 pureed or (once baby seems ready to move up from the really mushy stuff) cut up into really little bits.
                 “There’s pretty much free reign at that point,” Kupersmith says.</p>
-            </div>
+
             <hr>
-            <div id="section4">
-              <h2>{{ 'HOME.allergies' | translate}}</h2>
+
+              <h2 class="mb-3 mb-5 mt-5" id="section4" >{{ 'HOME.allergies' | translate}}</h2>
               <p>Introducing Allergenic Foods
                 Much of the confusion around when to start baby food stems from questions concerning allergenic foods.
                 These are
@@ -138,7 +138,7 @@
                 also be mixed into cereal and fruits. Don’t give whole peanuts or pieces of peanuts, since they’re a
                 choking risk.</p>
 
-              <p>Allergic reactions to food are never just a fluke; they will happen with every exposure. Symptoms can
+              <p style="margin-bottom: 50px !important;">Allergic reactions to food are never just a fluke; they will happen with every exposure. Symptoms can
                 range from
                 mild (such as a rash or vomiting) to severe (such as trouble breathing). If baby has a food allergy,
                 you’ll notice
@@ -148,10 +148,11 @@
                 severe, call 112 right away. Otherwise, talk to your pediatrician; she can help confirm whether it’s an
                 allergy or
                 some other type of condition (such as a viral illness).</p>
-            </div>
+
             <hr>
 
         </div>
+
       </div>
     </div>
   </div>

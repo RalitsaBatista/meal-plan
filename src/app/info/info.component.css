@@ -35,22 +35,15 @@
 }
 
 h1 {
-  font-size: 4rem;
-  color: rgb(59, 58, 56);
+
   text-align: center;
-  margin: 6rem 5px 0 50%;
   padding: 5px;
 }
-h2 {
-  color: rgb(59, 58, 56);
-  text-align: right;
-  margin: 7rem 5px 0 55%;
-  font-size: 2.5rem;
-}
+
 
 .bbb{
 position: relative; /* required */
-font-size: 2rem;
+font-size: 1.5rem;
 }
 .list-group{
     position: sticky; /* Supported in latest version of Chrome, Firefox, Safari, Opera and Edge browsers */

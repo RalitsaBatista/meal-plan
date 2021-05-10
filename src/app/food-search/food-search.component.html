@@ -1,9 +1,13 @@
 
-<div id="search-component" >
+<div id="search-component" class="container" >
 
-    <form class="d-flex input-group w-auto"style="max-width:40%; font-size: 1.5rem;">
-      <input #searchBox id="search-box" (input)="search(searchBox.value)" type="search" class="form-control" style="font-size: 1.5rem;" placeholder="Search.." aria-label="Search">
-      <button class="btn btn-outline-dark" type="button" data-mdb-ripple-color="dark"><i class="fa fa-search"></i></button>
+    <form class="d-flex input-group w-auto"style="max-width1:40%; font-size: 1.5rem;">
+      <div class="input-group mb-3">
+        <input #searchBox id="search-box" (input)="search(searchBox.value)" type="text" class="form-control col-md-4" style="font-size: 1.5rem;" placeholder="Search.." aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-outline-dark" type="button" style="min-width: 40px;"data-mdb-ripple-color="dark"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
     </form>
 
     <ul class="search-result">

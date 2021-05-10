@@ -4,25 +4,35 @@
 
   <app-food-search></app-food-search>
 
-  <form class="d-flex input-group w-auto"style="max-width:30%; font-size: 1.5rem;margin-left: 20px; margin-bottom:5px;">
-    <input #foodName placeholder="Add new food..."/>
-    <button (click)="add(foodName.value); foodName.value=''">
-      <i class="fa fa-plus"></i>
-    </button>
-  </form>
+  <div class="container mb-3">
+    <form class="d-flex input-group w-auto"style="max-width1:30%; font-size: 1.5rem;">
+
+      <div class="input-group">
+        <input #foodName placeholder="Add new food..." class="form-control col-md-4" style="font-size: 1.5rem;" type="text"/>
+        <div class="input-group-append">
+        <button (click)="add(foodName.value); foodName.value=''" class="btn btn-outline-dark " style="min-width: 40px;">
+          <i class="fa fa-plus"></i>
+        </button>
+        </div>
+      </div>
+    </form>
+</div>
 
 <div class="container">
-<ul class="foods col-md-8 ml-2">
-  <li *ngFor="let food of foods" class="col-sm-12 row">
+<ul class="foods col-md-81 ml-21">
+  <li *ngFor="let food of foods" class="col-sm-12 row1 mb-2 p-0">
     <a class="col-md-8 pl-0 food-item" routerLink="/detail/{{food.id}}">
-      <span class="badge">{{food.id}}</span><span class="food-name pl-3">{{food.name}}</span>
-    </a>
-    <button  class="edit btn " data-container="body" data-trigger="hover" data-toggle="popover" title="Edit item" data-content="Edit "
+      <span class="badge" style="text-shadow: 0px 1px 1px #555;">{{food.id}}</span><span class="food-name pl-3">{{food.name}}</span>
+
+      <button  class="edit btn d-none" data-container="body" data-trigger="hover" data-toggle="popover" title="Edit item" data-content="Edit "
     (click)="edit(food)"><i class="bi bi-pencil-square"></i>
     </button>
-    <button  class="delete btn btn-danger" data-container="body" data-trigger="hover" data-toggle="popover" title="Delete food" data-content="Delete "
-      (click)="delete(food)"><i class="bi bi-trash text-danger1"></i>
+    <button  class="delete btn p-0 float-right text-danger" data-container="body" data-trigger="hover" data-toggle="popover" title="Delete food" data-content="Delete "
+      (click)="delete(food)"><i class="bi bi-trash fa-2x "></i>
     </button>
+
+    </a>
+
   </li>
 </ul>
 </div>

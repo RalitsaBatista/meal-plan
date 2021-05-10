@@ -10,10 +10,10 @@ h1{
   margin:2rem;
 }
 
-ul .foods {
+ul.foods {
   list-style-type: none;
   padding: 0;
-  width: 60%;
+
   font-size: 2rem;
 }
 
@@ -27,9 +27,11 @@ ul.foods a {
 
 ul.foods a:hover {
   background-color: #e06049;
-  color: white;
+  color: #FFF !important;
 }
-
+ul.foods li a:hover .delete {
+  color: #FFF !important;
+}
 ul.foods .badge {
   min-width: 10%;
   font-size: 2rem;
@@ -40,11 +42,11 @@ ul.foods .badge {
 }
 button.delete,a.delete,button.edit,a.edit {
   color: white;
-  width: 10%;
   float: left;
   text-align: center;
   margin-left: 5px;;
 }
+
 .edit{
   background-color: #72b1ec;
 }

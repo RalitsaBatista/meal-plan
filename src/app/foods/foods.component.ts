@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Food } from '../food';
 import { FoodService } from '../food.service';
-import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
+//import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable,of,from } from 'rxjs';
 
 @Component({

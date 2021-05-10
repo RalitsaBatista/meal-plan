@@ -1,5 +1,12 @@
+<style>
+  .btn-back-to-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+</style>
 <div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
-    <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
-        <i class="fas fa-chevron-up" >Back to top</i>
+    <button type="button" class="btn btn-secondary active btn-back-to-top" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
+        <i class="fas fa-chevron-up fa-2x" ></i>
     </button>
   </div>
