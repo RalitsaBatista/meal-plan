@@ -21,7 +21,7 @@
 <div class="container">
 <ul class="foods col-md-81 ml-21">
   <li *ngFor="let food of foods" class="col-sm-12 row1 mb-2 p-0">
-    <a class="col-md-8 pl-0 food-item" routerLink="/detail/{{food.id}}">
+    <a class="col-md-8 pl-0 food-item" href="javascript:;" > <!--routerLink="/detail/{{food.id}}"-->
       <span class="badge" style="text-shadow: 0px 1px 1px #555;">{{food.id}}</span><span class="food-name pl-3">{{food.name}}</span>
 
       <button  class="edit btn d-none" data-container="body" data-trigger="hover" data-toggle="popover" title="Edit item" data-content="Edit "
